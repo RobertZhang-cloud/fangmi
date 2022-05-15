@@ -1,0 +1,878 @@
+.outer .toolbar {
+  position: fixed;
+  z-index: 99;
+  width: 300px;
+  height: 100%;
+  background-color: #7a6e6e;
+  transition: all 0.3s linear;
+}
+.outer .toolbar.toolbar-out {
+  top: 0;
+  right: 0;
+}
+.outer .toolbar.toolbar-wrap {
+  top: 0;
+  right: -294px;
+}
+.outer .toolbar .content {
+  width: 294px;
+  height: 100%;
+  background-color: bisque;
+  position: relative;
+  left: 6px;
+  z-index: 4;
+}
+.outer .toolbar .but {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  top: 0;
+  left: -29px;
+  cursor: pointer;
+  text-align: center;
+}
+.outer .toolbar .but.list {
+  background: #7a6e6e url(../images/list.png) center center no-repeat;
+  background-size: cover;
+}
+.outer .toolbar .but.pull-wrap {
+  background: #7a6e6e url(../images/cross.png) center center no-repeat;
+  background-size: cover;
+}
+.outer .toolbar .toolList {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -29px;
+  width: 35px;
+  z-index: 3;
+}
+.outer .toolbar .toolList .pull {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.outer .toolbar .toolList .pull .tab-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  z-index: 2;
+  background-color: #7a6e6e;
+}
+.outer .toolbar .toolList .pull em {
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  background-color: #776e6e;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+.outer .toolbar .toolList .pull .vip {
+  background: #7a6e6e url(../images/toolbars.png) -87px -174px no-repeat;
+}
+.outer .toolbar .toolList .pull .cart {
+  background: #7a6e6e url(../images/toolbars.png) -50px 0 no-repeat;
+}
+.outer .toolbar .toolList .pull .follow {
+  background: #7a6e6e url(../images/toolbars.png) -50px -100px no-repeat;
+}
+.outer .toolbar .toolList .pull .history {
+  background: #7a6e6e url(../images/toolbars.png) -190px -150px no-repeat;
+}
+.outer .toolbar .toolList .pull .message {
+  background: #7a6e6e url(../images/toolbars.png) -50px -150px no-repeat;
+}
+.outer .toolbar .toolList .pull .qus {
+  background: #7a6e6e url(../images/toolbars.png) -50px -250px no-repeat;
+}
+.outer .toolbar .back {
+  position: absolute;
+  bottom: 0;
+  left: -29px;
+}
+.outer .toolbar > .pull {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px 0 0 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.outer .toolbar > .pull .tab-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  z-index: 2;
+  background-color: #7a6e6e;
+}
+.outer .toolbar > .pull em {
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  background-color: #776e6e;
+  z-index: 1;
+}
+.outer .toolbar > .pull .top {
+  background: #7a6e6e url(../images/toolbars.png) -50px -250px no-repeat;
+}
+.outer .header > .top {
+  width: 100%;
+  background-color: #eaeaea;
+  height: 30px;
+  line-height: 30px;
+}
+.outer .header > .top .container {
+  *zoom: 1;
+  width: 1200px;
+  margin: 0 auto;
+}
+.outer .header > .top .container:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .header > .top .container .loginList {
+  float: left;
+}
+.outer .header > .top .container .loginList p {
+  float: left;
+  margin-right: 10px;
+}
+.outer .header > .top .container .loginList p .register {
+  border-left: 1px solid #b3aeae;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+.outer .header > .top .container .typeList {
+  float: right;
+  font-size: 0;
+}
+.outer .header > .top .container .typeList a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.outer .header > .top .container .typeList a ~ a {
+  border-left: 1px solid #b3aeae;
+}
+.outer .header > .bottom {
+  width: 1200px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+.outer .header > .bottom:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .header > .bottom .logoArea {
+  float: left;
+}
+.outer .header > .bottom .logoArea img {
+  width: 176px;
+  height: 56px;
+  margin: 25px 45px;
+}
+.outer .header > .bottom .searchArea {
+  float: right;
+  margin-top: 35px;
+}
+.outer .header > .bottom .searchArea .searchForm {
+  *zoom: 1;
+}
+.outer .header > .bottom .searchArea .searchForm:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .header > .bottom .searchArea .searchForm input {
+  box-sizing: border-box;
+  width: 490px;
+  height: 32px;
+  padding: 0px 4px;
+  border: 2px solid #ea4a36;
+  float: left;
+}
+.outer .header > .bottom .searchArea .searchForm input:focus {
+  outline: none;
+}
+.outer .header > .bottom .searchArea .searchForm button {
+  width: 68px;
+  height: 32px;
+  background-color: #ea4a36;
+  color: #fff;
+  float: left;
+  border: none;
+  cursor: pointer;
+}
+.outer .header > .bottom .searchArea .searchForm button:focus {
+  outline: none;
+}
+.outer .typeNav {
+  border-bottom: 2px solid #e1251b;
+}
+.outer .typeNav .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.outer .typeNav .container .all {
+  width: 210px;
+  height: 50px;
+  background-color: #e1251b;
+  font-size: 14px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.outer .typeNav .container .nav a {
+  margin: 0 22px;
+  line-height: 45px;
+  font-size: 16px;
+  color: #333;
+}
+.outer .con {
+  width: 1200px;
+  margin: 15px auto 0;
+}
+.outer .con .conPoin {
+  padding: 9px 15px 9px 0;
+}
+.outer .con .conPoin > a + a:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #ccc;
+}
+.outer .con .mainCon {
+  *zoom: 1;
+  margin: 5px 0 15px;
+}
+.outer .con .mainCon:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .previewWrap {
+  float: left;
+  width: 400px;
+}
+.outer .con .mainCon .previewWrap .preview {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #dfdfdf;
+  position: relative;
+}
+.outer .con .mainCon .previewWrap .preview .jqzoom {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.outer .con .mainCon .previewWrap .preview .jqzoom img {
+  width: 100%;
+}
+.outer .con .mainCon .previewWrap .preview .jqzoom .mask {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #ddd;
+}
+.outer .con .mainCon .previewWrap .preview .maxbox {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.outer .con .mainCon .previewWrap .preview .maxbox img {
+  width: 800px;
+  height: 800px;
+}
+.outer .con .mainCon .previewWrap .specScroll {
+  margin-top: 5px;
+  *zoom: 1;
+}
+.outer .con .mainCon .previewWrap .specScroll:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .previewWrap .specScroll .prev,
+.outer .con .mainCon .previewWrap .specScroll .next {
+  text-align: center;
+  width: 10px;
+  height: 54px;
+  line-height: 54px;
+  border: 1px solid #ccc;
+  background-color: #ebebeb;
+}
+.outer .con .mainCon .previewWrap .specScroll .prev {
+  float: left;
+  margin-right: 4px;
+}
+.outer .con .mainCon .previewWrap .specScroll .next {
+  float: right;
+}
+.outer .con .mainCon .previewWrap .specScroll .items {
+  width: 372px;
+  height: 56px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.outer .con .mainCon .previewWrap .specScroll .items .itemsCon {
+  position: absolute;
+  width: 9999px;
+  height: 56px;
+  left: 0;
+}
+.outer .con .mainCon .previewWrap .specScroll .items .itemsCon img {
+  float: left;
+  text-align: center;
+  border: 1px solid #CCC;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.outer .con .mainCon .infoWrap {
+  width: 700px;
+  float: right;
+}
+.outer .con .mainCon .infoWrap .info1 .infoName {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 15px;
+}
+.outer .con .mainCon .infoWrap .info1 .news {
+  color: #e12228;
+  margin-top: 15px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea {
+  background-color: #fee9ec;
+  margin-top: 10px;
+  line-height: 28px;
+  padding: 7px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 {
+  *zoom: 1;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .title {
+  float: left;
+  margin-right: 15px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price {
+  float: left;
+  color: #cc1122;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price i {
+  font-size: 16px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price em {
+  font-size: 24px;
+  font-weight: bold;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .price span {
+  font-size: 12px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea1 .remark {
+  float: right;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2 {
+  *zoom: 1;
+  line-height: 28px;
+  margin-top: 10px;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .title {
+  margin-right: 15px;
+  float: left;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth {
+  width: 520px;
+  float: left;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth .red-bg {
+  background-color: #c81623;
+  padding: 3px;
+  color: #fff;
+}
+.outer .con .mainCon .infoWrap .info1 .priceArea .priceArea2 .fixWidth .t-gray {
+  color: #999;
+}
+.outer .con .mainCon .infoWrap .info1 .support {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.outer .con .mainCon .infoWrap .info1 .support .supportArea {
+  margin-top: 10px;
+  line-height: 28px;
+  *zoom: 1;
+}
+.outer .con .mainCon .infoWrap .info1 .support .supportArea:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .infoWrap .info1 .support .supportArea .title {
+  margin-right: 15px;
+  float: left;
+}
+.outer .con .mainCon .infoWrap .info1 .support .supportArea .fixWidth {
+  width: 520px;
+  color: #999;
+  float: left;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea .choosed mark {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  background-color: snow;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea .choosed mark a {
+  font-size: 12px;
+  color: red;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea dl {
+  margin: 13px 0;
+  *zoom: 1;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea dl:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea dl dt {
+  float: left;
+  margin-right: 15px;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea dl dd {
+  float: left;
+  margin-right: 5px;
+  color: #666;
+  line-height: 24px;
+  padding: 2px 14px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+.outer .con .mainCon .infoWrap .choose .chooseArea dl dd:nth-of-type(1) {
+  color: red;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap {
+  *zoom: 1;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls {
+  width: 56px;
+  margin-right: 15px;
+  float: left;
+  position: relative;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls .itxt {
+  width: 38px;
+  height: 37px;
+  border: 1px solid #ddd;
+  color: #555;
+  text-align: center;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls .plus,
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls .mins {
+  position: absolute;
+  width: 15px;
+  height: 18px;
+  background-color: #f1f1f1;
+  color: #666;
+  line-height: 17px;
+  text-align: center;
+  right: 0px;
+  border: 1px solid #ccc;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls .plus {
+  top: 0;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .controls .mins {
+  top: 20px;
+  border-top: none;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .add {
+  float: left;
+}
+.outer .con .mainCon .infoWrap .choose .cartWrap .add a {
+  display: block;
+  padding: 0 25px;
+  height: 36px;
+  font-size: 16px;
+  background: #e1251b;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+}
+.outer .productDetail {
+  width: 1200px;
+  margin: 30px auto 0;
+  *zoom: 1;
+}
+.outer .productDetail:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .productDetail .aside {
+  width: 210px;
+  float: left;
+  border: 1px solid #ccc;
+}
+.outer .productDetail .aside .tabWraped {
+  height: 40px;
+  *zoom: 1;
+}
+.outer .productDetail .aside .tabWraped:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .productDetail .aside .tabWraped h4 {
+  border-top: 3px solid #fff;
+  float: left;
+  line-height: 36px;
+  width: 105px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.outer .productDetail .aside .tabWraped h4.active {
+  border-top-color: #e1251b;
+  border-bottom-color: #fff;
+}
+.outer .productDetail .aside .tabContent {
+  padding: 10px;
+}
+.outer .productDetail .aside .tabContent .tab-pane {
+  display: none;
+}
+.outer .productDetail .aside .tabContent .tab-pane.active {
+  display: block;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .partList {
+  *zoom: 1;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .partList:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .partList li {
+  width: 50%;
+  border-bottom: 1px dashed #ccc;
+  float: left;
+  line-height: 28px;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li {
+  margin: 5px 0 15px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li .p-img {
+  text-align: center;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li .p-img img {
+  width: 152px;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li .price {
+  font-size: 16px;
+  color: #c81623;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li .operate {
+  text-align: center;
+}
+.outer .productDetail .aside .tabContent .tab-pane:nth-child(1) .goodsList li .operate a {
+  padding: 2px 14px ;
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  line-height: 18px;
+}
+.outer .productDetail .detail {
+  width: 980px;
+  float: right;
+}
+.outer .productDetail .detail .fitting {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.outer .productDetail .detail .fitting .kt {
+  border-bottom: 1px solid #ddd;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px 0 5px 15px;
+}
+.outer .productDetail .detail .fitting .good-suits {
+  height: 170px;
+  padding-top: 10px;
+}
+.outer .productDetail .detail .fitting .good-suits .master {
+  width: 127px;
+  height: 165px;
+  text-align: center;
+  position: relative;
+  float: left;
+}
+.outer .productDetail .detail .fitting .good-suits .master img {
+  width: 87px;
+}
+.outer .productDetail .detail .fitting .good-suits .master p {
+  color: #c81623;
+  font-size: 16px;
+  font-weight: bold;
+}
+.outer .productDetail .detail .fitting .good-suits .master i {
+  position: absolute;
+  top: 48px;
+  right: -25px;
+  font-size: 16px;
+}
+.outer .productDetail .detail .fitting .good-suits .suits {
+  width: 668px;
+  height: 165px;
+  float: left;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem {
+  float: left;
+  width: 127px;
+  padding: 0 20px;
+  text-align: center;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem img {
+  width: 120px;
+  height: 130px;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem p {
+  font-size: 12px;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem label {
+  display: block;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem label input {
+  vertical-align: middle;
+}
+.outer .productDetail .detail .fitting .good-suits .suits .suitsItem label span {
+  vertical-align: middle;
+}
+.outer .productDetail .detail .fitting .good-suits .result {
+  width: 153px;
+  height: 165px;
+  border-left: 1px solid #ddd;
+  margin-left: 10px;
+  padding-left: 10px;
+  float: left;
+}
+.outer .productDetail .detail .fitting .good-suits .result .num {
+  margin: 10px 0;
+}
+.outer .productDetail .detail .fitting .good-suits .result .price-tit {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.outer .productDetail .detail .fitting .good-suits .result .price {
+  color: #B1191A;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.outer .productDetail .detail .fitting .good-suits .result .addShopcar {
+  padding: 10px 25px;
+  background-color: #e1251b;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+.outer .productDetail .detail .intro .tab-wraped {
+  background-color: #ededed;
+  *zoom: 1;
+}
+.outer .productDetail .detail .intro .tab-wraped:after {
+  content: "\200B";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.outer .productDetail .detail .intro .tab-wraped li {
+  float: left;
+}
+.outer .productDetail .detail .intro .tab-wraped li + li > a {
+  border-left: 1px solid #ddd;
+}
+.outer .productDetail .detail .intro .tab-wraped li.active a {
+  background-color: #ea4a36;
+  color: #fff;
+}
+.outer .productDetail .detail .intro .tab-wraped li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 11px;
+  text-align: center;
+  color: #666;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.outer .productDetail .detail .intro .tab-content .tab-pane {
+  display: none;
+}
+.outer .productDetail .detail .intro .tab-content .tab-pane.active {
+  display: block;
+}
+.outer .productDetail .detail .intro .tab-content #one .goods-intro {
+  padding-left: 10px;
+}
+.outer .productDetail .detail .intro .tab-content #one .goods-intro li {
+  margin: 10px 0;
+}
+.outer .productDetail .detail .intro .tab-content #one .intro-detail img {
+  width: 100%;
+}
+.outer .like {
+  width: 1198px;
+  border: 1px solid #ddd;
+  margin: 15px auto;
+}
+.outer .like .kt {
+  border-bottom: 1px solid #ddd;
+  background: #f1f1f1;
+  color: #333;
+  margin: 0;
+  padding: 5px 10px;
+}
+.outer .like .like-list {
+  padding: 15px 11px;
+  overflow: hidden;
+}
+.outer .like .like-list .likeItem {
+  width: 196px;
+  float: left;
+}
+.outer .like .like-list .likeItem .p-img {
+  text-align: center;
+}
+.outer .like .like-list .likeItem .p-img img {
+  width: 167px;
+  height: 123px;
+}
+.outer .like .like-list .likeItem .attr {
+  padding: 0 15px;
+}
+.outer .like .like-list .likeItem .price {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #c81623;
+  margin-bottom: 20px;
+}
+.outer .like .like-list .likeItem .commit {
+  padding: 0 15px;
+}
+.outer .footer {
+  background-color: #eaeaea;
+}
+.outer .footer .footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.outer .footer .footer-container .footerList {
+  padding: 20px;
+  border-bottom: 1px solid #e4e1e1;
+  border-top: 1px solid #e4e1e1;
+  overflow: hidden;
+  padding-left: 40px;
+}
+.outer .footer .footer-container .footerList .footerItem {
+  width: 16.6666667%;
+  float: left;
+}
+.outer .footer .footer-container .footerList .footerItem h4 {
+  font-size: 14px;
+}
+.outer .footer .footer-container .footerList .footerItem .footerItemCon li {
+  line-height: 18px;
+}
+.outer .footer .footer-container .footerList .footerItem:last-child img {
+  width: 121px;
+}
+.outer .footer .footer-container .copyright {
+  padding: 20px;
+}
+.outer .footer .footer-container .copyright .helpLink {
+  text-align: center;
+}
+.outer .footer .footer-container .copyright .helpLink li {
+  display: inline;
+}
+.outer .footer .footer-container .copyright .helpLink li .space {
+  border-left: 1px solid #666;
+  width: 1px;
+  height: 13px;
+  background: #666;
+  margin: 8px 10px;
+}
+.outer .footer .footer-container .copyright p {
+  margin: 10px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,46 @@
+
+.header {
+    position: relative;
+}
+.main-menu .item .item-list {
+    position: absolute;
+    left: 0;
+    /* width: 100%; */
+    /* display: flex; */
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+}
+.main-menu .item .item-list li {
+    position: relative;
+    /* flex: 1; */
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.main-menu .item .item-list li img {
+    width: 160px;
+    height: 110px;
+    margin-top: 30px;
+}
+.main-menu .item .item-list li p {
+    color: #333;
+    font-size: 14px;
+    margin-top: -30px;
+}
+.main-menu .item .item-list li h5 {
+    margin-top: -80px;
+    color: #ff6700;
+    
+}
+.main-menu .item .item-list li i {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 110px;
+    width: 1px;
+    background-color: #e0e0e0;
+}
+.main-menu .item .item-list li:last-child i {
+    width: 0;
+}
